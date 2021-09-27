@@ -1,0 +1,40 @@
+{
+  "name": "bims",
+  "version": "1.0.0",
+  "description": "A NOde.js application REST API using a MySQL database.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev":   "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jpscottranken/bims.git"
+  },
+  "keywords": [
+    "Node.js",
+    "MySQL",
+    "Representational",
+    "State",
+    "Transfer",
+    "(REST)",
+    "Application",
+    "Program",
+    "Interface",
+    "(API)"
+  ],
+  "author": "Jeff Scott",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jpscottranken/bims/issues"
+  },
+  "homepage": "https://github.com/jpscottranken/bims#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  }
+}
