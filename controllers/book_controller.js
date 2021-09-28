@@ -35,7 +35,7 @@ router.get('/book/', (req, res) => {
 //  Show single title route
 router.get('/book/:id?', (req, res) => {
     if (req.params.id) {
-        Book.getBookByIds(req.params.id, (err, rows) => {
+        Book.getBookById(req.params.id, (err, rows) => {
                 if (err) {
                     res.json(err);
                 } else {
@@ -68,3 +68,5 @@ router.delete('/book/:id', (req, res) => {
         }
     });
 });
+
+module.exports = router;
