@@ -4,7 +4,7 @@ const Book    = require('../models/book_model');
 
 //  Insert a new title route
 router.post('/book/', (req, res) => {
-	Book.createNewBook(req.body, (err, result) => {
+	Book.createNewBook(req.query, (err, result) => {
 		//	Error handler
 		if (err) {
 			if (err.code === "ER_DUP_ENTRY") {
@@ -49,7 +49,7 @@ router.get('/book/:id?', (req, res) => {
 
 //  Update single title route
 router.put('/book/:id', (req, res) => {
-    Book.updateBook(req.params.id, req.body, (err, rows) => {
+    Book.updateBook(req.params.id, req.query, (err, rows) => {
         if (err) {
             res.json(err);
         } else {

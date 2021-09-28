@@ -26,7 +26,7 @@ const Book = {
 			price:			Book.price
 		}
 		
-		return db.query("INSERT INTO book SET ?", book, callback);
+		return db.query("INSERT INTO titles SET ?", book, callback);
 	}
 };
 
